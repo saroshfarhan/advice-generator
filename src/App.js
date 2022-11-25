@@ -12,7 +12,7 @@ function App() {
     // console.log(JSON.stringify(result));
     // setId(result.slip.id);
     // setAdvice(result.slip.advice);
-    fetch("https://api.adviceslip.com/advice")
+    fetch("https://api.adviceslip.com/advice", { cache: "no-cache" })
       .then((res) => res.json())
       .then((data) => {
         setId(data.slip.id);
@@ -30,7 +30,7 @@ function App() {
         setId(data.slip.id);
         setAdvice(data.slip.advice);
       });
-  });
+  }, []);
 
   return (
     <div className="container flex h-screen items-center justify-center">
