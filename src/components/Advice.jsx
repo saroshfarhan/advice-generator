@@ -6,14 +6,12 @@ import mobSeperator from "../assets/pattern-divider-mobile.svg";
 function Advice(props) {
   return (
     <div className="relative mx-auto flex h-[312px] w-[342px] flex-col items-center justify-evenly rounded-xl bg-dark_grayish_blue align-middle md:h-[334px] md:w-[540px] lg:h-[334px] lg:w-[540px]">
-      <p className="text-center text-sm font-semibold uppercase tracking-[.25rem] text-neon_green">
+      <h1 className="text-center text-sm font-semibold uppercase tracking-[.25rem] text-neon_green">
         Advice #{props.id}
-      </p>
-      <h2>
-        <blockquote className="px-8 text-center text-xl font-bold text-light_cyan lg:px-10 lg:text-2xl">
-          "{props.advice}"
-        </blockquote>
-      </h2>
+      </h1>
+      <blockquote className="px-8 text-center text-xl font-bold text-light_cyan lg:px-10 lg:text-2xl">
+        "{props.advice}"
+      </blockquote>
       <section className="grid items-center justify-center text-light_cyan">
         <img
           src={deskSeperator}
