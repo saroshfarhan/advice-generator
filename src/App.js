@@ -7,11 +7,6 @@ function App() {
   const [advice, setAdvice] = useState("");
 
   function handleClick() {
-    // const response = await fetch("https://api.adviceslip.com/advice");
-    // const result = await response.json();
-    // console.log(JSON.stringify(result));
-    // setId(result.slip.id);
-    // setAdvice(result.slip.advice);
     fetch("https://api.adviceslip.com/advice", { cache: "no-cache" })
       .then((res) => res.json())
       .then((data) => {
