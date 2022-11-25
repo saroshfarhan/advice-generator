@@ -6,7 +6,7 @@ function App() {
   const [id, setId] = useState("");
   const [advice, setAdvice] = useState("");
 
-  async function handleClick() {
+  function handleClick() {
     // const response = await fetch("https://api.adviceslip.com/advice");
     // const result = await response.json();
     // console.log(JSON.stringify(result));
