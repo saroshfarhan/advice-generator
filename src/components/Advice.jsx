@@ -9,11 +9,11 @@ function Advice(props) {
       <p className="text-center text-sm font-semibold uppercase tracking-[.25rem] text-neon_green">
         Advice #{props.id}
       </p>
-      <h1>
+      <h2>
         <blockquote className="px-8 text-center text-xl font-bold text-light_cyan lg:px-10 lg:text-2xl">
           "{props.advice}"
         </blockquote>
-      </h1>
+      </h2>
       <section className="grid items-center justify-center text-light_cyan">
         <img
           src={deskSeperator}
