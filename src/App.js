@@ -33,9 +33,9 @@ function App() {
   }, []);
 
   return (
-    <div className="container flex h-screen items-center justify-center">
+    <main className="container flex h-screen items-center justify-center">
       <Advice id={id} advice={advice} handleClick={handleClick} />
-    </div>
+    </main>
   );
 }
 
