@@ -10,7 +10,7 @@ function Advice(props) {
         <p className="text-center text-sm font-semibold uppercase tracking-[.25rem] text-neon_green">
           Advice #{props.id}
         </p>
-        <blockquote className="px-4 text-center text-xl font-bold text-light_cyan">
+        <blockquote className="px-4 text-center text-base font-bold text-light_cyan lg:text-xl">
           "{props.advice}"
         </blockquote>
         <section className="grid items-center justify-center text-light_cyan">
